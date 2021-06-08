@@ -58,29 +58,51 @@ Do not publish your code on a public repl.it or repo or other public means.
 
 ## Rewrite the question in your own words:
 
+Given a number input, write a function that transforms number into roman numeral string.
+
 
 ## What assumptions will you make about this problem if you cannot ask any more clarifying questions? What are your reasons for making those assumptions?
 
+Assume that input is a number, postive, and whole. Numbers range from 0 - 4000.
 
 ## What are your initial thoughts about this problem? (high level design, 2-3 sentences)
+
+There could be some type of pattern to identify. 
+Seems like there could be endless conditionals if no pattern exists.
+Maybe can break the number up based on if it's greater or less than 50, 100, -- roman numeral characters.
 
 
 ## How would you identify the elements of this problem?
 
 - [ ] Searching of Data
 - [ ] Sorting of Data
-- [ ] Pattern Recognition
+- [ X ] Pattern Recognition
 - [ ] Build/Navigate a Grid
 - [ ] Math
 - [ ] Language API knowledge
-- [ ] Optimization
+- [ X ] Optimization
 
 
 ## Which data structure(s) do you think you'll use? What pros/cons do you see with that choice?
 
+At the moment I cannot see structure without many conditionals, this not great for performance.
+Need to identify pattern, not sure if I'll need to iterate or not.
+
 
 ## Write out a few lines of initial pseudocode: (mid-level design, NOT REAL CODE)
 
+- create an object with keys of roman numerial and values of their respective numeric values
+- create an empty results array to hold roman numerial strings
+- Iterate over object keys
+- divide input num by roman numerial equivalent and look for positive remainder 
+- If remainder is positive, subtract number from number input and add corresponding key to result array
+- continue loop until finsihed 
+- return string of results
+
 ## Write out any implementation code OR link to repl
 
+[REPL](https://replit.com/@AlexThompson207/Roman-Numerials#index.js)
+
 ## What is the Big O complexity of your solution?
+
+I think it's O(n) or O (log n), but not sure...
