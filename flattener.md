@@ -50,17 +50,25 @@ or in JS:
 
 ## Rewrite the question in your own words:
 
+Given a nested array, or a multi-dimensional array, write a function to 'flatten' the array in a single array.
+
 
 ## What assumptions will you make about this problem if you cannot ask any more clarifying questions? What are your reasons for making those assumptions?
 
+That the elements in the input array have a length, input elements are numbers or strings.
+
 
 ## What are your initial thoughts about this problem? (high level design, 2-3 sentences)
+
+Will need to use recursion to 'loop' through the array and extract each element adding it to single array.
+Need to find a base case where there are no elements left in the array, i.e. array.length === 0.
+Want a recursive case that removes elements of the array.
 
 
 ## How would you identify the elements of this problem?
 
 - [ ] Searching of Data
-- [ ] Sorting of Data
+- [X] Sorting of Data ??
 - [ ] Pattern Recognition
 - [ ] Build/Navigate a Grid
 - [ ] Math
@@ -69,10 +77,14 @@ or in JS:
 
 
 ## Which data structure(s) do you think you'll use? What pros/cons do you see with that choice?
-
+Use a single recursive function with a base case and a recursive case.
 
 ## Write out a few lines of initial pseudocode: (mid-level design, NOT REAL CODE)
 
+pseduocode in repl
+
 ## Write out any implementation code OR link to repl
+
+[REPL](https://replit.com/@AlexThompson207/Array-Flattener#index.js)
 
 ## What is the Big O complexity of your solution?
